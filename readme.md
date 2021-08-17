@@ -217,13 +217,16 @@ this type of error can also come due to missing of Procfile.
 
 1. [How to deploy a MERN Stack App to Heroku by Esterling Accime](https://youtu.be/5PaUiPyBDJY)
 
-2. [How to Deploy (Host) MERN Stack App on Heroku For Free in 2021 by Thapa Technical](https://youtu.be/7il2CrBA5VY)
+2. [How to Deploy (Host) MERN Stack App on Heroku For Free in 2021 by Thapa Technical - Youtube](https://youtu.be/7il2CrBA5VY)
 
 3. [React routing error - Stack Overflow](https://stackoverflow.com/questions/41772411/react-routing-works-in-local-machine-but-not-heroku)
 
 4. [React Routing not working - FreeCodeCamp](https://forum.freecodecamp.org/t/react-router-not-working-on-heroku/442908/5)
 
 5. [heroku push gets rejected - Stack Overflow](https://stackoverflow.com/questions/39267808/heroku-push-gets-rejected)
+
+6. [How to Deploy (Host) MERN Stack App on Heroku For Free in 2021 by Thapa Technical - docs](https://www.thapatechnical.com/2021/04/how-to-deploy-mern-projects-on-heroku.html)
+
 
 
 
