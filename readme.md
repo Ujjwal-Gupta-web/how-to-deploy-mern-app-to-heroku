@@ -16,7 +16,9 @@
 
 
 **Step 1:**
+
 **Move the client folder inside the server folder.**
+
 While developing a MERN app it is regular practice to keep two folder one containing client (REACT) code and another containing server (node/express) code.
 
 
@@ -29,6 +31,7 @@ While developing a MERN app it is regular practice to keep two folder one contai
 
 
 **Step 4:**
+
 ```
 cd server/client    // no need to do this if you are already inside this directory.
 npm run build.     // this to create a build file which contains all the React content to be served
@@ -36,10 +39,13 @@ npm run build.     // this to create a build file which contains all the React c
 
 
 **Step 5:**
+
 **After this there must be build folder inside the client folder.**
 
 **Here  comes the crazy part,**
+
 Now we will have to do some tweakings inside the package.json inside the server.
+
 In the scripts part add the following commands-
 
 the scripts section should look like this-
@@ -74,7 +80,9 @@ Add these commands in your main
 push confidential details like DB url and Api keys in it.
 
 add dynamic `port process.env.PORT`
+
 now replace DB with `process.env.DB`
+
 replace API_KEYS with `process.env.API_KEYS`.
 
 you got the point which i want to make here.
@@ -89,6 +97,7 @@ what it does is, it helps in ignoring the pushing of these files when you push y
 
 **Step 8:**
 now in server.js -
+
 add this condition-
 ```
 if(process.env.NODE_ENV==='production'){
@@ -119,16 +128,21 @@ now in cli write
 ```
 heroku login        // this will log you inside the heroku cli.
 ```
+
 This will make you login in into heroku.
 
 
 **Step 10:**
 Visit [heroku.com](https://www.heroku.com/)
+
 Click on **NEW** button and create a new app with the name you want your website to have in its domain name.
+
 Now heroku will provide you steps to be followed further.
+
 Perform them.
 
 **After all this your application will be live in a while.**
+
 **Congratulations.**
 
 > NOTE : if you change anything in your app, make sure to update and push it to git by using the following commands.
