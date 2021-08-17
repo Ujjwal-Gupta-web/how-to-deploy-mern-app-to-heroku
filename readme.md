@@ -1,15 +1,19 @@
 ## How to deploy a MERN app on Heroku
 **(All steps explained.)**
+
 *Solution to some of the common errors*
+
 *Link to some great resources can be found in here.*
 
-> Before  starting all these steps i consider that you people have installed [heroku cli](https://devcenter.heroku.com/articles/heroku-cli) and git() into your system.
+> Before  starting all these steps i consider that you people have installed [heroku cli](https://devcenter.heroku.com/articles/heroku-cli) and git into your system.
 
 *These requirements may vary according to your OS, but make sure, both these things are installed on your os in whatever way they are supposed to be.*
 
 **All these steps i am sharing are performed by me on a windows machine, so there might be some differences in other OS.**
 
+
 ### Steps to follow, to deploy a mern app on heroku-
+
 
 **Step 1:**
 **Move the client folder inside the server folder.**
@@ -25,8 +29,10 @@ While developing a MERN app it is regular practice to keep two folder one contai
 
 
 **Step 4:**
+```
 cd server/client    // no need to do this if you are already inside this directory.
 npm run build.     // this to create a build file which contains all the React content to be served
+```
 
 
 **Step 5:**
@@ -50,6 +56,7 @@ the scripts section should look like this-
 
 *basically all these are scripts that will run while the app will be deployed into production.*
 
+
 **Step 6 (for those who havenot done it in begining):**
 come into the server.js file-
 ```
@@ -71,6 +78,7 @@ now replace DB with `process.env.DB`
 replace API_KEYS with `process.env.API_KEYS`.
 
 you got the point which i want to make here.
+
 
 **Step 7:**
 **now create a .gitignore (if not present) in the root folder.**
@@ -134,30 +142,44 @@ git commit heroku master.
 ### Error: (the terrific part, but a regular thing in a developer’s life)
 
 **Error 1:**
-you might find sometimes-
 
-fatal: unable to access 'https://git.heroku.com/<appname>.git/': Could not resolve host: git.heroku.com
+you may find sometimes-
+
+fatal: unable to access 'https://git.heroku.com/appname.git/': Could not resolve host: git.heroku.com
 
 if you encounter something like this, check your internet connection once
+
 or
+
 try 
+
 heroku login (which log you again into your heroku cli)
 
+
 **Error 2:**
+
 While doing 
+
 git push heroku master
 
 you may get errors like build failed, 
+
 in that case-
+
 scroll up and try to read if they have mentioned some error somewhere or not-
-sometimes you have a error in your react app , like you have used wrong folder structure and you might have used some wrong conventions.
+
+sometimes you have a error in your react app , like you have used wrong folder structure and you might 
+
+have used some wrong conventions.
 
 sometimes, it happens due to missing of the version of node in your package.json file,
 
 you can check the version of node by using the command node -v
+
 copy this version and paste that into your package.json file.
 
 this type of error can also come due to missing of Procfile.
+
 
 
 ### Resources:
