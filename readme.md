@@ -39,7 +39,7 @@ While developing a MERN app it is regular practice to keep two folder one contai
 
 ```
 cd server/client    // no need to do this if you are already inside this directory.
-npm run build.     // this to create a build file which contains all the React content to be served
+npm run build     // this to create a build file which contains all the React content to be served
 ```
 
 
