@@ -39,7 +39,7 @@ While developing a MERN app it is regular practice to keep two folder one contai
 
 ```
 cd server/client    // no need to do this if you are already inside this directory.
-npm run build     // this to create a build file which contains all the React content to be served
+npm run build.     // this to create a build file which contains all the React content to be served
 ```
 
 
@@ -61,7 +61,7 @@ the scripts section should look like this-
     "build":"cd client && npm run build",
     "install-client":"cd client && npm install",
     "heroku-postbuild":"npm run install-client && npm run build",
-    "start": "node app.js",
+    "start": "node server.js",
     "client":"cd client && npm start"    
   }
 ```
@@ -139,7 +139,7 @@ i tried not using this part and found that sometimes it was making trouble in my
 
 **Step 9:**
 
-now in cli write 
+now in cli , write 
 ```
 heroku login        // this will log you inside the heroku cli.
 ```
@@ -167,7 +167,7 @@ Perform them.
 ```
 git add .
 git commit -am "message"
-git commit heroku master.
+git commit heroku main.
 ```
 
 ### Error: (the terrific part, but a regular thing in a developer’s life)
@@ -229,11 +229,6 @@ this type of error can also come due to missing of Procfile.
 
 
 
+### Best Practices:
 
-
-
-
-
-
-
-
+Professionally React part and nodejs are deployed at different servers.
