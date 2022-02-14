@@ -167,7 +167,7 @@ Perform them.
 ```
 git add .
 git commit -am "message"
-git commit heroku main.
+git push heroku main.
 ```
 
 ### Error: (the terrific part, but a regular thing in a developer’s life)
